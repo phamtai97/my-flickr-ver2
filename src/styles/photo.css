@@ -1,0 +1,118 @@
+.main-photo{
+  width: 100%;
+  height: 100%;
+  margin: 0 none;
+  display: block;
+}
+
+.container-photo{
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;  
+  align-items: center;
+  height: 100%;
+}
+
+.photo{
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to bottom, #f9feff, #eafafe, #dcf6fe, #cdf2fe, #beeeff);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 100%;
+  margin-top:20px;
+}
+
+.content-left{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  margin-right: 0px
+}
+
+.owner-name-photo{
+  font-size: 25px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.title-photo{
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  margin-top: 10px;
+}
+
+.discription{
+  font-size: 13px;
+  font-family: 'Krub', sans-serif;
+  margin-top: 10px;
+}
+
+.content-right{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.view{
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.fav{
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.comments{
+  display: flex;
+  flex-direction: column;
+}
+
+.number-item{
+  font-family: 'Titillium+Web', sans-serif;
+  color: black;
+  font-size: 25px;
+}
+
+.text-item{
+  font-family: 'Krub', sans-serif;
+  color: rgb(32, 32, 32);
+  font-size: 17px;
+  margin-top:10px;
+}
+
+.list-tag{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-wrap:wrap;
+  width: 50%;
+}
+
+.tag{
+  margin:8px;
+  padding:5px;
+  background: rgb(163, 163, 163);
+  border-radius: 7px;
+}
+
+.tag:hover{
+  background: rgb(179, 179, 179);
+}
+
+.tag:active{
+  background: rgb(153, 152, 152);
+}

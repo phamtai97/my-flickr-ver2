@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    top: 0px;
+    height: 70px;
+    width: 100%;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+    background-blend-mode: multiply;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.app-name {
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    font-size: 40px;
+    margin-left: 30px;
+    width: 150px;
+    text-align: center;
+}
+
+.app-name:hover{
+    color: rgba(255, 255, 255, 0.719);
+}
+.explore{
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 60px;
+    text-decoration: none;
+    padding:11px;
+}
+
+.explore:hover{
+    background: rgba(107, 102, 102, 0.315);
+    color: rgba(255, 255, 255, 0.719);
+}
+
+
+.mssv {
+    flex-grow: 1;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}

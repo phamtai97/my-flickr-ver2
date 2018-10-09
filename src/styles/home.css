@@ -1,0 +1,11 @@
+.main-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 200px 100px 0px 100px;
+}
+
+.main-home>marquee{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 100px;
+}

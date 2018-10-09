@@ -1,0 +1,87 @@
+.main {}
+
+.container-image {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 5px;
+}
+
+.container-image:hover .image {
+    opacity: 1;
+}
+
+.container-image:hover .footer {
+    opacity: 1;
+    background-color:rgba(139, 139, 139, 0.3);
+}
+
+.image {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: none;
+}
+
+.image>Image{
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.footer {
+    transition: .5s ease;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    bottom: 0px;
+    height: 50px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content:flex-start;
+} 
+
+.title{
+    height: 50%;
+    margin-left: 10px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.owner-name{
+    flex-grow: 1;
+    margin-left: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 12px;
+}
+
+.info-view{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon-view{
+    width: 20px;
+    margin-right: 15px;
+}
+
+.number-view{
+    text-align: right;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+} 

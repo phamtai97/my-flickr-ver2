@@ -1,0 +1,11 @@
+.loader {
+    margin-left: 50%;
+    margin-top: 100px;
+}
+
+.main-explore{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 80px 100px 0px 100px;
+}

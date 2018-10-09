@@ -1,0 +1,30 @@
+.search{
+    display: flex;
+    flex-direction: row;
+}
+
+.btnSearch{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border: none;
+    margin-right: 40px;
+    background: rgb(29, 212, 245);
+}
+
+.btnSearch:hover{
+    background: rgb(60, 221, 250);
+}
+
+.btnSearch:active{
+    background: rgb(41, 193, 219);
+}
+
+.search-input>input{
+    width: 400px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    height: 40px;
+    font-size: 18px;
+    padding: 8px;
+    border: none;
+}
