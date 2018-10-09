@@ -26,7 +26,10 @@ class Search extends Component {
         return ( 
             <div className="search">
                 <div className = "search-conatainer" >
-                    <SearchInput className="search-input" onChange={this.searchUpdated} placehodler="tai"/>
+                    <SearchInput className="search-input" onChange={this.searchUpdated} placehodler="tai" onKeyUp={(event) => {
+                        if (event.key === 'Enter') {
+                            this.searchItems();
+                        }}}/>
                 </div>
                 <button className="btnSearch" onClick={this.searchItems}>
                     <img src={iconSearch}/>

@@ -20,7 +20,6 @@ class Tag extends Component {
 
     type = "spokes";
     loadMore(page) {
-        console.log("dfasdasd");
         const raw = this.props.match.params.id;
         setTimeout(() => {
             let url = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${key_flickr}&tags=${raw}&date=&extras=url_z%2C+views%2C+owner_name&per_page=20&page=${page}&format=json&nojsoncallback=1`;
