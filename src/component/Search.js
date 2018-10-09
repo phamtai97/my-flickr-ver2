@@ -17,16 +17,27 @@ class Search extends Component {
     searchUpdated (item) {
         this.setState({searchItem: item});
     }
-    
+
     searchItems(){
         this.props.history.push('/photos/tags/' + this.state.searchItem);
     }
 
+    getTag(){
+        const url = window.location.href.split('/');
+        console.log("tag" + url[5]);
+        if(url.length === 6 && url[4] === "tags"){
+            return url[5];
+        }else{
+            return null;
+        }
+    }
+
     render() {
-        return ( 
+        const tag = this.getTag();
+        return (
             <div className="search">
                 <div className = "search-conatainer" >
-                    <SearchInput className="search-input" onChange={this.searchUpdated} placehodler="tai" onKeyUp={(event) => {
+                    <SearchInput value={tag} className="search-input" onChange={this.searchUpdated} placehodler="tai" onKeyUp={(event) => {
                         if (event.key === 'Enter') {
                             this.searchItems();
                         }}}/>
