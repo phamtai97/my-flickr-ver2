@@ -24,6 +24,7 @@ class Search extends Component {
 
     getTag(){
         const url = window.location.href.split('/');
+        console.log("tag" + url[5]);
         if(url.length === 6 && url[4] === "tags"){
             return url[5];
         }else{
